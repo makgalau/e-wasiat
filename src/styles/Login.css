@@ -1,0 +1,79 @@
+.background {
+    height: 100vh;
+    background: url("../assets/images/background/background1.png") no-repeat bottom left fixed;
+    background-size: cover;
+}
+
+.box-container {
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+.textfield-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    margin: 15px 0px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textfield-container i {
+    font-size: 1.5em;
+    margin: 0px 10px;
+}
+
+.textfield {
+    padding-bottom: 5px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1.2em;
+    height: inherit;
+    width: 100%;
+}
+
+.textfield:focus {
+    outline: none;
+}
+
+.blank {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.show-password-icon {
+    all: unset;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.show-password-icon:hover {
+    background-color: #B1B1B1;
+    border-radius: 100%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.sumbit {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    width: 150px;
+    background-color: #51A1EC;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    color: white;
+}
