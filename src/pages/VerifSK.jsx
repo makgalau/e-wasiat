@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Form, Card } from "reactstrap";
 
-import Profile from "../components/Profile";
+import Post from "../components/Post";
 import Header from "../components/Header";
 import SideBar1 from "../components/SideBar1";
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
@@ -8,8 +8,10 @@ import React, { useState } from 'react';
 import { EditorState } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 
+import TabelWasiatku from "../components/TabelWasiatku";
+import TabelWasiatUntukku from "../components/TabelWasiatUntukku";
 
-function Profil() {
+function VerifSK() {
   const [editorState, setEditorState] = useState(
     () => EditorState.createEmpty(),
   );
@@ -38,7 +40,7 @@ function Profil() {
            tag="section"
            className="py-0 mb-0 py-md-0 mb-md-0"
          >
-         <Profile />
+         
          </Col>
        </Row>
       </Container>
@@ -47,5 +49,5 @@ function Profil() {
   )
 }
 
-export default Profil;
+export default VerifSK;
 

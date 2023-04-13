@@ -39,7 +39,7 @@ const SideBar1 = () => {
                 <li><a href="/dashboard" class="nav-link scrollto active"><Icon icon="bx:home" /> <span>&nbsp; Home</span></a></li>
                 <li><a href="/wasiatku" class="nav-link scrollto"><Icon icon="bx:book-bookmark" /> <span>&nbsp; Wasiatku</span></a></li>
                 <li><a href="/wasiatuntukku" class="nav-link scrollto"><Icon icon="bx:book-heart" /> <span>&nbsp; Wasiat Untukku</span></a></li>
-                <li><a href="/profil" class="nav-link scrollto"><Icon icon="bx:user" /> <span>&nbsp; Profil</span></a></li>
+                <li><a href="/profile" class="nav-link scrollto"><Icon icon="bx:user" /> <span>&nbsp; Profil</span></a></li>
                 <li><a href="/logout" class="nav-link scrollto"><Icon icon="bx:undo" /> <span>&nbsp; Logout</span></a></li>
                 </ul>
             </nav>
