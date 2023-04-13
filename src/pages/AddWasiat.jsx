@@ -1,18 +1,17 @@
-import { Container, Row, Col, Button, Form } from "reactstrap";
+import { Container, Row, Col, Button, Form, FormGroup, Label,Input, FormText, Card } from "reactstrap";
 
 import Post from "../components/Post";
 import Header from "../components/Header";
 import SideBar1 from "../components/SideBar1";
 
 
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-// import './App.css';
 
+// import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import React, { useState } from 'react';
 import { EditorState } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 
-function Dashboard() {
+function AddWasiat() {
   const [editorState, setEditorState] = useState(
     () => EditorState.createEmpty(),
   );
@@ -37,32 +36,50 @@ function Dashboard() {
          
          <Col
            xs={{ order: 2 }}
-           md={{ size: 7, offset: 1 }}
+           md={{ size: 10, offset: 1 }}
            tag="section"
            className="py-0 mb-5 py-md-0 mb-md-0"
          >
-          <Form>
-           <Post />
-              <Col
-              xs={{ order: 1 }}
-              md={{ size: 7, offset: 10 }}
-              tag="section"
-              className="py-5 mb-5 py-md-3 mb-md-0"
-            >
-                <Button color="success" className="font-weight-bold ">
-                      + Penerima
-                      </Button>
+          <Post/>
+          <br/>
+          <Form >    
+              <FormGroup row >
+                <Label for="exjudul" sm={2} >Judul Wasiat :</Label>
+                <Col sm={10}>
+                  <Input type="text" name="judul" id="exjudul" placeholder="Masukan Judul Wasiat" />
+                </Col>
+              </FormGroup>
+              <FormGroup row>
+                <Label for="expenerima" sm={2}>Penerima Wasiat :</Label>
+                <Col sm={10}>
+                  <Input type="text" name="penerima" id="expenerima" placeholder="Masukan no.whatsapp penerima wasiat" />
+                  <FormText color="muted">
+                      *pisahkan dengan ';' jika penerima lebih dari 1, contoh: 08123456;089765432
+                  </FormText>
                   
-            </Col>
-          
-           <Editor
-      editorState={editorState}
-      onEditorStateChange={setEditorState}
-    />
-
+                </Col>
+              </FormGroup>
+              <FormGroup  >
+                <Label for="ex_isi" sm={2} className="text-left">Isi Wasiat :</Label>
+                <Col
+                  xs={{ order: 1 }}
+                  md={{ size: 10, offset: 10 }}
+                  tag="section"
+                  className="py-5 mb-5 py-md-3 mb-md-0"
+                >
+                
+                </Col>
+                <Card>
+                 <Editor
+                  editorState={editorState}
+                  onEditorStateChange={setEditorState}
+                 />
+                 </Card>
+              </FormGroup>
+            
       <Col
            xs={{ order: 1 }}
-           md={{ size: 7, offset: 5 }}
+           md={{ size: 10, offset: 5 }}
            tag="section"
            className="py-10 mb-5 py-md-5 mb-md-0"
          >
@@ -79,5 +96,5 @@ function Dashboard() {
   )
 }
 
-export default Dashboard;
+export default AddWasiat;
 

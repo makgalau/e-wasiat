@@ -7,6 +7,7 @@ import AddWasiat from './pages/AddWasiat';
 import EditWasiat from './pages/EditWasiat';
 import Wasiatku from './pages/Wasiatku';
 import WasiatUntukku from './pages/WasiatUntukku';
+import UploadSuratKematian from './pages/UploadSuratKematian';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path='/edit' element={<EditWasiat/>} />
           <Route path='/wasiatku' element={<Wasiatku/>} />
           <Route path='/wasiatuntukku' element={<WasiatUntukku/>} />
+          <Route path='/uploadsk' element={<UploadSuratKematian/>} />
+          <Route path='/profile' element={<profile/>} />
         </Routes>
       </div>
     </Router>
