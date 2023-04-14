@@ -13,7 +13,7 @@ const Header = () => (
     <Navbar fixed="top" color="light"  light expand="xs" className="border-bottom border-gray bg-white" style={{ height: 80 }}>
 
       <Container>
-        <Row noGutters className="position-relative w-100 align-items-center">
+        <Row noGutters className="position-relative w-200 align-items-center">
           <Col className="d-flex justify-content-xs-start justify-content-center">
             <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 100 }}>
             <img src={require('../assets/images/e-Wasiat.png')} alt='e-Wasiat' width='150%'/> 

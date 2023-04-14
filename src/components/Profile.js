@@ -4,23 +4,14 @@ import { Card } from "react-bootstrap";
 import { Col, Button, Form, FormGroup, Label, Input, FormText, CardBody, CardHeader } from 'reactstrap';
 import profil from "../assets/images/profil.jpg";
 const Profile = () => {
-   const [punyaWasiat, setPunyaWasiat] = useState(false);
-   const[tabelWasiat, setTabelWasiat] = useState("Maaf, Anda belum memiliki Wasiat");
-   //cek ada wasiatnya atau engga dari API
-  //  if (!punyaWasiat) {
-  //   setTabelWasiat("Maaf, Anda belum memiliki Wasiat")
-  //  }else {
-  //     setTabelWasiat("")
-  //  }
-
-
-    return (
+  
+  return (
       <>
       <Card >
         <CardHeader>
           <div className="position-relative py-1">
             <span className="d-block pb-2 mb-0 h6 text-uppercase text-info font-weight-bold">
-              Profil User
+              Profil 
             </span>
           </div>
         </CardHeader>

@@ -9,8 +9,11 @@ import Wasiatku from './pages/Wasiatku';
 import WasiatUntukku from './pages/WasiatUntukku';
 import UploadSuratKematian from './pages/UploadSuratKematian';
 import Profil from './pages/Profil';
+import ProfilAdmin from './pages/ProfilAdmin';
 import VerifSK from './pages/VerifSK';
 import ManageUser from './pages/ManageUser';
+import BacaWasiat from './pages/BacaWasiat';
+import DashboardAdmin from './pages/DashboardAdmin';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           <Route path='/profile' element={<Profil/>} />
           <Route path='/verifsk' element={<VerifSK/>}/>
           <Route path='/manageuser' element={<ManageUser/>}/>
+          <Route path='/baca' element={<BacaWasiat/>}/>
+          <Route path='/profiladmin' element={<ProfilAdmin/>}/>
+          <Route path='/dashadmin' element={<DashboardAdmin/>}/>
         </Routes>
       </div>
     </Router>

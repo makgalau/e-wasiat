@@ -1,21 +1,13 @@
 import { Container, Row, Col, Button, Form, Card } from "reactstrap";
 
-import UploadSK from "../components/UploadSK";
+import Baca from "../components/Baca";
 import Header from "../components/Header";
 import SideBar1 from "../components/SideBar1";
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import React, { useState } from 'react';
-import { EditorState } from 'draft-js';
-import { Editor } from 'react-draft-wysiwyg';
 
-import TabelWasiatku from "../components/TabelWasiatku";
-import TabelWasiatUntukku from "../components/TabelWasiatUntukku";
-
-function UploadSuratKematian() {
-  const [editorState, setEditorState] = useState(
-    () => EditorState.createEmpty(),
-  );
-
+function BacaWasiat() {
+  
   return (
     <>
     <Header />
@@ -40,7 +32,7 @@ function UploadSuratKematian() {
            tag="section"
            className="py-0 mb-0 py-md-0 mb-md-0"
          >
-         <UploadSK />
+         <Baca />
          </Col>
        </Row>
       </Container>
@@ -49,5 +41,5 @@ function UploadSuratKematian() {
   )
 }
 
-export default UploadSuratKematian;
+export default BacaWasiat;
 
